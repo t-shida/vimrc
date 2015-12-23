@@ -32,3 +32,10 @@ endif↲
 ↲
 " 無名レジスタに入るデータを、*レジスタにも入れる。↲
 :set clipboard+=unnamed↲
+
+"文字コード自動判別↲
+:set encoding=utf-8↲
+:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8↲
+↲
+"改行コードの自動認識↲
+:set fileformats=unix,dos,mac
