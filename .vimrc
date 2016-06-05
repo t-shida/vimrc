@@ -34,8 +34,18 @@ endif
 :set clipboard+=unnamed
 
 "文字コード自動判別
-:set encoding=utf-8
-:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+"git commit が文字化けする
+":set encoding=utf-8
+":set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 
 "改行コードの自動認識
 :set fileformats=unix,dos,mac
+
+" エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
+set laststatus=2
+
+" カーソルが何行目の何列目に置かれているかを表示する
+set ruler
+
+" ステータス行に表示させる情報の指定
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
