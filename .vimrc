@@ -1,6 +1,6 @@
 set autoindent
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set nobackup
 set vb t_bv=
