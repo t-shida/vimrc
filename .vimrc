@@ -56,3 +56,19 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 
 " タブバーを常に表示する
 set showtabline=2
+
+
+" start neobundle
+if 0 | endif
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Yggdroot/indentLine'
+call neobundle#end()
+filetype plugin indent on
+" end neobundle
