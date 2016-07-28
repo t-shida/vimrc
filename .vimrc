@@ -42,8 +42,8 @@ endif
 "改行コードの自動認識
 :set fileformats=unix,dos,mac
 
-"不可視文字の表示↲
-set list↲
+"不可視文字の表示
+set list
 
 " エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
 set laststatus=2
@@ -53,3 +53,6 @@ set ruler
 
 " ステータス行に表示させる情報の指定
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+" タブバーを常に表示する
+set showtabline=2
