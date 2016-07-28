@@ -42,6 +42,9 @@ endif
 "改行コードの自動認識
 :set fileformats=unix,dos,mac
 
+"不可視文字の表示↲
+set list↲
+
 " エディタウィンドウの末尾から2行目にステータスラインを常時表示させる
 set laststatus=2
 
