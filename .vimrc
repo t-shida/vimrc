@@ -6,6 +6,7 @@ set nobackup
 set vb t_bv=
 set showmatch
 set enc=utf-8
+set noswapfile
 
 set showcmd
 
