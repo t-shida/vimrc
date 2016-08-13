@@ -70,12 +70,10 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-
+" indentLine
 NeoBundle 'Yggdroot/indentLine'
 call neobundle#end()
 filetype plugin indent on
-
-" indentLine
 let g:indentLine_color_term = 233
 let g:indentLine_char = '¦'
 " end neobundle
