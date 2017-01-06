@@ -34,10 +34,10 @@ endif
 " 無名レジスタに入るデータを、*レジスタにも入れる。
 :set clipboard+=unnamed
 
-" 文字コード自動判別
-" git commit が文字化けする
-" :set encoding=utf-8
-" :set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+"文字コード設定
+set encoding=utf-8
+"set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis,windows-31j,cp932
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis,cp932
 
 " 改行コードの自動認識
 :set fileformats=unix,dos,mac
