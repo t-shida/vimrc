@@ -58,7 +58,7 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 set showtabline=2
 
 " start neobundle
-" $ cd ~/.vim/bundle
+" $ mkdir -p .vim/bundle
 " $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 " :NeoBundleInstall
 if 0 | endif
@@ -70,9 +70,13 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-" indentLine
+
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
+
 NeoBundle 'Yggdroot/indentLine'
 call neobundle#end()
+" indentLine
 filetype plugin indent on
 let g:indentLine_color_term = 233
 let g:indentLine_char = '¦'
