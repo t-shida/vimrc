@@ -7,7 +7,7 @@ set vb t_bv=
 set showmatch
 set enc=utf-8
 set noswapfile
-
+set hlsearch
 set showcmd
 
 let loaded_matchparen = 1
