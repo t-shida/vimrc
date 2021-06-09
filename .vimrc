@@ -57,6 +57,8 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 " タブバーを常に表示する
 set showtabline=2
 
+set visualbell t_vb=
+
 " start neobundle
 " $ mkdir -p .vim/bundle
 " $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
